@@ -52,6 +52,9 @@ public class ChagntuListxServiceImpl extends ServiceImpl<ChagntuListxMapper, Cha
         for (ChagntuListxVO chagntuListxVO : list) {
             if ("外六海通".equals(chagntuListxVO.get发货单位())) {
                 chagntuListxVO.set发货单位("外六海");
+                chagntuListxVO.set发货单位("外六海");
+
+
                 if (StringUtils.isNotEmpty(chagntuListxVO.get作业类型())) {
                     if (chagntuListxVO.get作业类型().contains("长途")) {
                         chagntuListxVO.set作业类型("长途");
